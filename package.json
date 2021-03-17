@@ -37,11 +37,7 @@
 		"test:pixi": "APP_ENV=test jest --runInBand --detectOpenHandles --forceExit --testPathPattern pixi",
 		"test:grow-extensions": "cd pages/extensions && if which grow; then python3 -m unittest discover -p \"*_test.py\"; else echo grow not installed with pip. skip tests; fi"
 	},
-	"keywords": [
-		"amphtml",
-		"framework",
-		"documentation"
-	],
+	"keywords": ["amphtml", "framework", "documentation"],
 	"author": "The AMP HTML Authors",
 	"license": "Apache-2.0",
 	"signale": {
@@ -50,12 +46,11 @@
 	"_moduleAliases": {
 		"@examples": "examples",
 		"@boilerplate": "boilerplate",
+		"@playground": "playground",
+		"@pixi": "pixi",
 		"@lib": "platform/lib"
 	},
-	"browserslist": [
-		"last 2 versions",
-		"not dead"
-	],
+	"browserslist": ["last 2 versions", "not dead"],
 	"dependencies": {
 		"@ampproject/toolbox-cache-list": "2.7.4",
 		"@ampproject/toolbox-cors": "2.8.0-canary.4",

@@ -27,7 +27,7 @@ const subdomain = require('./middleware/subdomain.js');
 const webSocketServer = require('@examples/socket-server/socket-server');
 
 const routers = {
-  boilerplate: require('../../boilerplate/backend/'),
+  boilerplate: require('@boilerplate/backend/'),
   cspReport: require('@lib/routers/cspReport.js'),
   example: {
     api: require('@examples'),
@@ -45,8 +45,8 @@ const routers = {
   log: require('@lib/routers/runtimeLog.js'),
   notFound: require('@lib/routers/notFound.js'),
   packager: require('@lib/routers/packager.js'),
-  pixi: require('../../pixi/backend/'),
-  playground: require('../../playground/backend/'),
+  pixi: require('@pixi/backend/'),
+  playground: require('@playground/backend/'),
   search: require('@lib/routers/search.js'),
   static: require('@lib/routers/static.js'),
   survey: require('@lib/routers/surveyComponent.js'),
